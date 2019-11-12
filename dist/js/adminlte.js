@@ -1,5 +1,5 @@
 /*!
- * AdminLTE v3.0.0 (https://adminlte.io)
+ * AdminLTE v3.0.1-pre (https://adminlte.io)
  * Copyright 2014-2019 Colorlib <http://colorlib.com>
  * Licensed under MIT (https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE)
  */
@@ -7,7 +7,7 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
   (global = global || self, factory(global.adminlte = {}));
-}(this, function (exports) { 'use strict';
+}(this, (function (exports) { 'use strict';
 
   /**
    * --------------------------------------------
@@ -1786,5 +1786,5 @@
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=adminlte.js.map
