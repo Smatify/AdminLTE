@@ -17,11 +17,11 @@ $black: #111 !default;
 $gray-x-light: #d2d6de !default;
 
 $colors: map-merge((
-    'navy': $navy,
-    'olive': $olive,
-    'lime': $lime,
-    'fuchsia': $fuchsia,
-    'maroon': $maroon,
+  'navy': $navy,
+  'olive': $olive,
+  'lime': $lime,
+  'fuchsia': $fuchsia,
+  'maroon': $maroon,
 ), $colors);
 
 // LAYOUT
@@ -41,7 +41,7 @@ $boxed-layout-max-width: 1250px !default;
 $screen-header-collapse: map-get($grid-breakpoints, md) !default;
 
 // Body background (Affects main content background only)
-$main-bg: #f4f6f9 !default;
+$main-bg: #2c2c34;
 
 // Content padding
 $content-padding-y: 0 !default;
@@ -79,12 +79,12 @@ $main-header-dark-form-control-border: 0 !default;
 $main-header-dark-form-control-focused-border: 0 !default;
 $main-header-dark-placeholder-color: hsla(100, 100%, 100%, 0.6) !default;
 
-$main-header-light-form-control-bg: darken($gray-100, 2%) !default;
-$main-header-light-form-control-focused-bg: $gray-200 !default;
-$main-header-light-form-control-focused-color: $gray-800 !default;
-$main-header-light-form-control-border: 0 !default;
-$main-header-light-form-control-focused-border: 0 !default;
-$main-header-light-placeholder-color: hsla(0, 0%, 0%, 0.6) !default;
+$main-header-light-form-control-bg: $main-header-dark-form-control-bg;
+$main-header-light-form-control-focused-bg: $main-header-dark-form-control-focused-bg;
+$main-header-light-form-control-focused-color: $main-header-dark-form-control-focused-color;
+$main-header-light-form-control-border: $main-header-dark-form-control-border;
+$main-header-light-form-control-focused-border: $main-header-dark-form-control-focused-border;
+$main-header-light-placeholder-color: $main-header-dark-placeholder-color;
 
 // MAIN FOOTER
 // --------------------------------------------------------
@@ -117,18 +117,18 @@ $sidebar-dark-submenu-active-bg: hsla(100, 100%, 100%, 0.9) !default;
 $sidebar-dark-header-color: $white !default;
 
 // Light sidebar
-$sidebar-light-bg: $white !default;
-$sidebar-light-hover-bg: rgba($black, .1) !default;
-$sidebar-light-color: $gray-800 !default;
-$sidebar-light-hover-color: $gray-900 !default;
-$sidebar-light-active-color: $black !default;
-$sidebar-light-submenu-bg: transparent !default;
-$sidebar-light-submenu-color: #777 !default;
-$sidebar-light-submenu-hover-color: #000 !default;
-$sidebar-light-submenu-hover-bg: $sidebar-light-hover-bg !default;
-$sidebar-light-submenu-active-color: $sidebar-light-hover-color !default;
-$sidebar-light-submenu-active-bg: $sidebar-light-submenu-hover-bg !default;
-$sidebar-light-header-color: $gray-800 !default;
+$sidebar-light-bg: $sidebar-dark-bg;
+$sidebar-light-hover-bg: $sidebar-dark-hover-bg;
+$sidebar-light-color: $sidebar-dark-color;
+$sidebar-light-hover-color: $sidebar-dark-hover-color;
+$sidebar-light-active-color: $sidebar-dark-active-color;
+$sidebar-light-submenu-bg: $sidebar-dark-submenu-bg;
+$sidebar-light-submenu-color: $sidebar-dark-submenu-color;
+$sidebar-light-submenu-hover-color: $sidebar-dark-submenu-hover-color;
+$sidebar-light-submenu-hover-bg: $sidebar-dark-submenu-hover-bg;
+$sidebar-light-submenu-active-color: $sidebar-dark-submenu-active-color;
+$sidebar-light-submenu-active-bg: $sidebar-dark-submenu-active-bg;
+$sidebar-light-header-color: $sidebar-dark-header-color;
 
 // SIDEBAR MINI
 // --------------------------------------------------------
@@ -208,11 +208,11 @@ $button-border-radius-xs: .15rem !default;
 // --------------------------------------------------------
 $elevations: ();
 $elevations: map-merge((
-    1: unquote('0 1px 3px ' + rgba($black, 0.12) + ', 0 1px 2px ' + rgba($black, 0.24)),
-    2: unquote('0 3px 6px ' + rgba($black, 0.16) + ', 0 3px 6px ' + rgba($black, 0.23)),
-    3: unquote('0 10px 20px ' + rgba($black, 0.19) + ', 0 6px 6px ' + rgba($black, 0.23)),
-    4: unquote('0 14px 28px ' + rgba($black, 0.25) + ', 0 10px 10px ' + rgba($black, 0.22)),
-    5: unquote('0 19px 38px ' + rgba($black, 0.30) + ', 0 15px 12px ' + rgba($black, 0.22)),
+  1: unquote('0 1px 3px ' + rgba($white, 0.12) + ', 0 1px 2px ' + rgba($white, 0.24)),
+  2: unquote('0 3px 6px ' + rgba($white, 0.16) + ', 0 3px 6px ' + rgba($white, 0.23)),
+  3: unquote('0 10px 20px ' + rgba($white, 0.19) + ', 0 6px 6px ' + rgba($white, 0.23)),
+  4: unquote('0 14px 28px ' + rgba($white, 0.25) + ', 0 10px 10px ' + rgba($white, 0.22)),
+  5: unquote('0 19px 38px ' + rgba($white, 0.30) + ', 0 15px 12px ' + rgba($white, 0.22)),
 ), $elevations);
 
 // RIBBON
